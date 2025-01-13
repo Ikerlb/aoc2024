@@ -201,11 +201,8 @@ grid = [list(row) for row in grid_txt.splitlines()]
 instructions = parse_instructions(instructions_txt)
 
 def simulate(grid, instructions):
-    #print(grid)
     for (dr, dc) in instructions:
         grid.move(dr, dc)
-        #print(f"Move {format_dir(dr, dc)}:")
-        #print(grid)
     return grid.gps()
 
 #p1
