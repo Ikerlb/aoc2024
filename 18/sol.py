@@ -30,6 +30,10 @@ def neighbors(grid, r, c):
             continue
         yield nr, nc
 
+# i also feel like I can
+# do Union Find Set
+# in much better time
+# complexity
 def bfs(grid, start, end):
     q = deque([start])
     visited = {start}
