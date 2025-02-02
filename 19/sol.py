@@ -63,7 +63,7 @@ def part2(patterns, towels):
         if not indices:
             return 0
         res = 0
-        for i in trie.get_prefixes_indices(w):
+        for i in indices:
             res += dp(w[i + 1:])
         return res
 
